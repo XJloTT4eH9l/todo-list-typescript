@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: var(--color-white);
+}
+
+.header__img {
+    width: 26px;
+    height: 26px;
+}
+
+.header__btn:hover {
+    animation: rotate 0.3s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+

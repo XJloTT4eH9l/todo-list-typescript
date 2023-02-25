@@ -1,13 +1,137 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+font-family: inherit;
+}
+
+input::-ms-clear {
+display: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Variables */
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #494C6B;
+  --color-bg-light: #FAFAFA;
+  --color-bg-dark: #171823;
+  --color-light-grey: #C8CBE7;
+  --color-dark-grey: #5B5E7E;
+  --color-blue: #3A7CFD;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'Josefin-Sans';
+	src: url('./assets/fonts/JosefinSans-Regular.eot');
+	src: local('☺'), url('./assets/fonts/JosefinSans-Regular.woff') format('woff'), url('./assets/fonts/JosefinSans-Regular.ttf') format('truetype'), url('./assets/fonts/JosefinSans-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Josefin-Sans';
+	src: url('./assets/fonts/JosefinSans-Bold.eot');
+	src: local('☺'), url('./assets/fonts/JosefinSans-Bold.woff') format('woff'), url('./assets/fonts/JosefinSans-Bold.ttf') format('truetype'), url('./assets/fonts/JosefinSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Josefin-Sans', sans-serif;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+.container {
+  max-width: 570px;
+  padding: 0 15px;
+  margin: 0 auto;
 }

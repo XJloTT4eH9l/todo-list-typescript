@@ -1,0 +1,22 @@
+.todo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.3s linear;
+}
+
+.todo__container {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 570px;
+}
+
+.light {
+    background-color: var(--color-bg-light);
+}
+
+.dark {
+    background-color: var(--color-bg-dark);
+}

@@ -1,23 +1,14 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
+import { ThemeContext } from '../../context';
 
 import moon from '../../assets/img/moon.svg';
 import sun from '../../assets/img/sun.svg';
 
 import styles from './Header.module.css';
 
-interface headerProps {
-    theme: string;
-    setTheme: (theme: string) => void;
-}
-const Header:FC<headerProps> = ({theme, setTheme}) => {
-    const changeTheme = () => {
-        switch(theme) {
-          case 'light': setTheme('dark'); break
-          case 'dark': setTheme('light'); break
-          default: setTheme('light'); break
-        }
-      }
-
+const Header:FC = () => {
+    const {theme, changeTheme} = useContext(ThemeContext)
+    
     return (
         <header className={styles.header}>
             <h1 className={styles.header__title}>TODO</h1>

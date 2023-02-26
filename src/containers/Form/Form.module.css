@@ -1,0 +1,26 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 23px 15px;
+    font-size: 18px;
+    border-radius: var(--border-radius);
+    transition: opacity 0.3 linear;
+}
+
+.light {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.dark {
+    background-color: var(--color-input-bg-dark);
+    color: var(--color-light-grey);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

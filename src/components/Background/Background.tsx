@@ -1,17 +1,15 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
+import { ThemeContext } from '../../context';
 import cn from 'classnames';
 
 import styles from './Background.module.css';
 
-interface backGroundTheme {
-    theme: string;
-}
 
-const Background:FC<backGroundTheme> = ({ theme }) => {
+const Background:FC = () => {
+    const { theme } = useContext(ThemeContext);
+    
     return (
-        <div className={cn(styles.background, theme === 'light' ? styles.light : styles.dark)}>
-
-        </div>
+        <div className={cn(styles.background, theme === 'light' ? styles.light : styles.dark)} />
     )
 }
 

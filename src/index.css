@@ -102,6 +102,9 @@ h6 {
   --color-light-grey: #C8CBE7;
   --color-dark-grey: #5B5E7E;
   --color-blue: #3A7CFD;
+  --color-input-bg-dark: #25273D;
+
+  --border-radius: 5px;
 }
 
 /* Fonts */
@@ -132,9 +135,10 @@ body {
 }
 
 .todo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 570px;
+  margin: 0 auto;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
 }

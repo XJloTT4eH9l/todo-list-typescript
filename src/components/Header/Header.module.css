@@ -16,18 +16,11 @@
 .header__img {
     width: 26px;
     height: 26px;
+    transform: rotate(0deg);
+    transition: transform 0.3s linear;
 }
 
-.header__btn:hover {
-    animation: rotate 0.3s linear;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
+.header__imgMouseOver {
+    transform: rotate(90deg);
 }
 

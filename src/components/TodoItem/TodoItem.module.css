@@ -13,6 +13,10 @@
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
+.item:last-child {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
 .light {
     color: var(--color-black);
     background-color: var(--color-white);
@@ -44,6 +48,7 @@
 
 .item__textCompleted {
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
 .item__removeBtn {

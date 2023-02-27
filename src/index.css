@@ -102,8 +102,12 @@ h6 {
   --color-light-grey: #C8CBE7;
   --color-dark-grey: #5B5E7E;
   --color-blue: #3A7CFD;
+  
   --color-input-bg-dark: #25273D;
   --color-checkbox-dark: #393A4B;
+
+  --color-footer-dark: #5B5E7E;
+  --color-footer-light: #9495A5;
 
   --border-radius: 5px;
 }
@@ -129,7 +133,7 @@ h6 {
 
 body {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: 'Josefin-Sans', sans-serif;
   line-height: 1;
   color: var(--color-black);

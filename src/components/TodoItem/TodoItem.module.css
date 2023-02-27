@@ -1,0 +1,52 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid;
+    transition: all 0.3s linear;
+}
+.item:hover .item__removeBtn {
+    opacity: 1;
+}
+.item:first-child {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.light {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: #f1f1f8;
+}
+
+.dark {
+    color: var(--color-light-grey);
+    background-color: var(--color-input-bg-dark);
+    border-color: #393a4b;
+}
+
+
+.item__container {
+    display: flex;
+    align-items: center;
+}
+
+.item__ckeckbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.item__text {
+    font-size: 18px;
+    margin-top: 1px;
+}
+
+.item__textCompleted {
+    text-decoration: line-through;
+}
+
+.item__removeBtn {
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}

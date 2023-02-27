@@ -6,6 +6,7 @@ import { ITodo } from '../../types/types';
 import Background from '../../components/Background';
 import Header from '../../components/Header';
 import Form from '../Form';
+import TodoList from '../TodoList';
 
 import styles from './Todo.module.css';
 
@@ -19,6 +20,7 @@ const Todo = () => {
             <div className={styles.todo__container}>
                 <Header />
                 <Form todos={todos} setTodos={setTodos} />
+                <TodoList todos={todos} setTodos={setTodos} />
             </div>
         </div>
     )

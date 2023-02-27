@@ -16,7 +16,7 @@ const Form:FC<FormProps> = ({ todos, setTodos }) => {
     const { theme } = useContext(ThemeContext);
     const [inputValue, setInputValue] = useState<string>('');
 
-    const handleSubmit = (e: MouseEvent) => {
+    const addTodo: React.MouseEventHandler<HTMLButtonElement> = (e) => {
         e.preventDefault();
         if(inputValue.length !== 0) {
             const todo: ITodo = {
@@ -31,9 +31,14 @@ const Form:FC<FormProps> = ({ todos, setTodos }) => {
     
     return (
         <form className={styles.form}>
-            <InputText inputValue={inputValue} setInputValue={setInputValue} />
+            <InputText 
+                inputValue={inputValue} 
+                setInputValue={setInputValue}
+                todos={todos}
+                setTodos={setTodos} 
+            />
             <button 
-                onClick={(e) => handleSubmit(e)} 
+                onClick={addTodo} 
                 className={cn(styles.btn, theme === 'light' ? styles.light : styles.dark)}
             >
                 Add todo

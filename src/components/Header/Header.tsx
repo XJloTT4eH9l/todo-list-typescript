@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from 'react';
+import { FC, useContext, useEffect, useState, memo } from 'react';
 import { ThemeContext } from '../../context';
 import cn from 'classnames';
 
@@ -18,7 +18,19 @@ const Header:FC = () => {
     const mouseOutHandler:React.MouseEventHandler<HTMLImageElement> = () => {
         setMouseOver(false);
     }
-    
+
+    const themeHandler = () => {
+        const root = document.querySelector(':root') as HTMLElement;
+        
+        root.style.setProperty(
+            `--default-background-color`,
+            `var(--color-bg-${theme})`
+        )
+    }
+
+    useEffect(() => {
+        themeHandler()
+    }, [theme])
     return (
         <header className={styles.header}>
             <h1 className={styles.header__title}>TODO</h1>
@@ -35,4 +47,4 @@ const Header:FC = () => {
     )
 }
 
-export default Header;
+export default memo(Header);

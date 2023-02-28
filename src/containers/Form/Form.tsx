@@ -1,4 +1,4 @@
-import { useState, useContext, FC, MouseEvent } from 'react';
+import { useState, useContext, FC, memo} from 'react';
 import { ThemeContext } from '../../context';
 import { ITodo } from '../../types/types';
 import cn from 'classnames';
@@ -47,4 +47,4 @@ const Form:FC<FormProps> = ({ todos, setTodos }) => {
     )
 }
 
-export default Form;
+export default memo(Form);

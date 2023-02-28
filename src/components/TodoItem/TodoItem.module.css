@@ -55,3 +55,12 @@
     transition: opacity 0.3s linear;
     opacity: 0;
 }
+
+@media screen and  (max-width: 700px) {
+    .item {
+        padding: 20px 14px;
+    }
+    .item__removeBtn {
+        opacity: 1;
+    }
+}

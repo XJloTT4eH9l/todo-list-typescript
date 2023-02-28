@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react';
+import { FC, useContext, memo } from 'react';
 import cn from 'classnames';
 import { ITodo } from '../../types/types';
 import { ThemeContext } from '../../context';
@@ -36,4 +36,4 @@ const TodoItem:FC<TodoItemProps> = ({
     )
 }
 
-export default TodoItem;
+export default memo(TodoItem);

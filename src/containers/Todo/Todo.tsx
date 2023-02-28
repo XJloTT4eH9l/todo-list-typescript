@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import cn from 'classnames';
 import { ThemeContext } from '../../context';
 import { ITodo } from '../../types/types';
@@ -13,7 +13,11 @@ import styles from './Todo.module.css';
 
 const Todo = () => {
     const { theme } = useContext(ThemeContext);
-    const [todos, setTodos] = useState<ITodo[]>([]);
+    const [todos, setTodos] = useState<ITodo[]>(localStorage.getItem('todo-items') !== null ? JSON.parse(localStorage.getItem('todo-items') || '') : []);
+
+    useEffect(() => {
+        localStorage.setItem('todo-items', JSON.stringify(todos));
+    }, [todos])
     
     return (
         <div className={cn(styles.todo, theme === 'light' ? styles.light : styles.dark)}>

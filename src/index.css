@@ -110,6 +110,7 @@ h6 {
   --color-footer-light: #9495A5;
 
   --border-radius: 5px;
+  --default-background-color: var(--color-bg-light);
 }
 
 /* Fonts */
@@ -137,6 +138,7 @@ body {
   font-family: 'Josefin-Sans', sans-serif;
   line-height: 1;
   color: var(--color-black);
+  background-color: var(--default-background-color);
 }
 
 .todo {
@@ -146,4 +148,24 @@ body {
   top: 70px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+* {
+	scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, .7);
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgb(37, 56, 97);
+	border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, .7);
+}
+::-webkit-scrollbar-corner {
+	background-color: rgba(0, 0, 0, .7);	
 }

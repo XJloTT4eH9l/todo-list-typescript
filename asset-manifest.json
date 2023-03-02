@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/todo-list-typescript/static/css/main.40f6ef0c.css",
-    "main.js": "/todo-list-typescript/static/js/main.1cc2739b.js",
+    "main.css": "/todo-list-typescript/static/css/main.8db2b551.css",
+    "main.js": "/todo-list-typescript/static/js/main.f48f17af.js",
     "static/media/JosefinSans-Regular.svg": "/todo-list-typescript/static/media/JosefinSans-Regular.cbdc66910cd5d1c6a6ca.svg",
     "static/media/JosefinSans-Bold.svg": "/todo-list-typescript/static/media/JosefinSans-Bold.e0f0888033a93965de45.svg",
     "static/media/bg-light.jpg": "/todo-list-typescript/static/media/bg-light.e22cacb009d6b95f14ec.jpg",
@@ -16,11 +16,11 @@
     "index.html": "/todo-list-typescript/index.html",
     "static/media/moon.svg": "/todo-list-typescript/static/media/moon.289552746978b9f796c4e47947cce791.svg",
     "static/media/remove-btn.svg": "/todo-list-typescript/static/media/remove-btn.8d0191d37055e0d4d9ebf18ff753776f.svg",
-    "main.40f6ef0c.css.map": "/todo-list-typescript/static/css/main.40f6ef0c.css.map",
-    "main.1cc2739b.js.map": "/todo-list-typescript/static/js/main.1cc2739b.js.map"
+    "main.8db2b551.css.map": "/todo-list-typescript/static/css/main.8db2b551.css.map",
+    "main.f48f17af.js.map": "/todo-list-typescript/static/js/main.f48f17af.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f6ef0c.css",
-    "static/js/main.1cc2739b.js"
+    "static/css/main.8db2b551.css",
+    "static/js/main.f48f17af.js"
   ]
 }

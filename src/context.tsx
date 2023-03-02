@@ -9,7 +9,7 @@ export interface ThemeContextInterface {
 }
 
 const defaultState = {
-    theme: 'light',
+    theme: 'dark',
     filter: 'All'
 }
 

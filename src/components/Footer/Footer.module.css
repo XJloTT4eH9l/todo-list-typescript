@@ -1,7 +1,7 @@
 .footer {
     padding: 16px 24px;
-    font-size: 14px;
-    border-radius: var(--border-radius);
+    font-size: 16px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
     transition: background-color 0.3s linear;
 }
 
@@ -28,10 +28,14 @@
     font-weight: 700;
     cursor: pointer;
     transition: color 0.3 linear;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer__clear {
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .fiter__itemActive {
@@ -58,13 +62,16 @@
     color: var(--color-white);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .filters {
-       flex-direction: column;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
     }
+}
 
-    .filters__item:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+@media screen and (max-width: 550px) {
+   
 }

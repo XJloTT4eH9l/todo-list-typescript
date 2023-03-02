@@ -32,3 +32,10 @@
         top: 40px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .todo__container {
+        width: 320px;
+        top: 40px;
+    }
+}

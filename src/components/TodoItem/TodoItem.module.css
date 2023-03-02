@@ -13,14 +13,10 @@
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.item:last-child {
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
-
 .light {
     color: var(--color-black);
     background-color: var(--color-white);
-    border-color: #f1f1f8;
+    border-color: #E3E4F1;
 }
 
 .dark {
@@ -56,11 +52,14 @@
     opacity: 0;
 }
 
-@media screen and  (max-width: 700px) {
-    .item {
-        padding: 20px 14px;
-    }
+@media screen and  (max-width: 1200px) {
     .item__removeBtn {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .item {
+        padding: 20px 14px;
     }
 }

@@ -35,6 +35,7 @@ const InputText:FC<InputtextProps> = ({ inputValue, setInputValue, todos, setTod
         <input
             className={cn(styles.input, theme === 'light' ? styles.input__light : styles.input__dark)}
             placeholder='Create a new todo...'
+            maxLength={20}
             onChange={inputHandler} 
             onKeyDown={onKeyDownHandler}
             value={inputValue}

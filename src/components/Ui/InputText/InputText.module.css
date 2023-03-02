@@ -28,3 +28,9 @@
         width: 370px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .input {
+        width: 320px;
+    }
+}

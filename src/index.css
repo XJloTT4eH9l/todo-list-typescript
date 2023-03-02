@@ -43,7 +43,7 @@ body {
 input,
 button,
 textarea {
-font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {

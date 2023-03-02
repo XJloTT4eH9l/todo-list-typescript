@@ -10,6 +10,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .ckeckbox__default {
@@ -61,4 +63,10 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+@media screen and (max-width: 900px) {
+    .checkbox:hover input ~ .checkbox__custom {
+        border-color: var(--color-checkbox-dark);
+    }
 }
